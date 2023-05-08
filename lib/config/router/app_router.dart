@@ -11,7 +11,7 @@ final appRouter = GoRouter(
 
     GoRoute(
       path: '/',
-      name: HomeScreen.name,   //TODO navegar entre pantallas con go_router 6.2: Para poder utilizarlas en nuestro router
+      name: HomeScreen.name,   //TODO navegar entre pantallas con go_router 6.2: Para poder utilizarlas en nuestro
       builder: (context, state) => const HomeScreen(),
     ),
 

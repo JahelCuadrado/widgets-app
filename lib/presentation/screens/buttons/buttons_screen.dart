@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 
 class ButtonsScreen extends StatelessWidget {
@@ -13,7 +14,120 @@ class ButtonsScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Buttons Screen'),
       ),
-      body: const Placeholder(),
+      body: const _ButtonsView(),
+      floatingActionButton: FloatingActionButton(child: const Icon(Icons.arrow_back_ios_new_rounded), onPressed: (){
+        context.pop(); //TODO navegar entre pantallas con go_router 8: eliminar pantalla para volver a la anterior
+      }, 
+      ),
+    );
+  }
+}
+
+class _ButtonsView extends StatelessWidget {
+  
+  const _ButtonsView();
+
+  @override
+  Widget build(BuildContext context) {
+
+    final colors = Theme.of(context).colorScheme;
+
+    return SizedBox(
+      width: double.infinity,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 20),
+        child: Wrap(
+          spacing: 10,
+          alignment: WrapAlignment.center,
+          children: [
+    
+            ElevatedButton(onPressed: () {
+            }, child: const Text('Elevated')),
+    
+            const ElevatedButton(onPressed: null, child: Text('Eleveted Disable')),
+    
+            ElevatedButton.icon(
+              onPressed: (){}, 
+              icon: const Icon(Icons.access_alarm_outlined),
+              label: const Text('Elevated icon'),
+              ),
+
+            FilledButton(onPressed: () {
+            }, child: const Text('Filled')),
+
+            FilledButton.icon(
+              onPressed: () {}, 
+              icon: const Icon(Icons.accessibility_new),
+              label: const Text('Filled Icon')
+              ),
+
+           OutlinedButton(
+              onPressed: () {}, 
+              child: const Text('Outline')
+              ),
+
+           OutlinedButton.icon(
+              onPressed: () {}, 
+              icon: const Icon(Icons.terminal),
+              label: const Text('Outline')
+              ),
+
+            TextButton(
+              onPressed: (){}, 
+              child: const Text('Text')
+              ),
+
+            TextButton.icon(
+              onPressed: (){}, 
+              icon: const Icon(Icons.account_balance_outlined),
+              label: const Text('Text Icon')
+              ),
+
+
+            const CustomButtom(),
+
+
+            IconButton(
+              onPressed: (){}, 
+              icon: const Icon(Icons.app_registration)
+              ),
+
+            IconButton(
+              onPressed: (){}, 
+              icon: const Icon(Icons.app_registration),
+              style: ButtonStyle(
+                backgroundColor: MaterialStatePropertyAll(colors.primary)
+              ),
+              )
+    
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+
+class CustomButtom extends StatelessWidget {
+  const CustomButtom({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+
+    final colors = Theme.of(context).colorScheme;
+
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(20),
+      child: Material(
+        color: colors.primary,
+        child: InkWell(
+          onTap: (){},
+          child: const Padding(
+            padding:  EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+            child:  Text('Hola mundo', style: TextStyle(color: Colors.white),)
+            ),
+        ),
+      ),
     );
   }
 }
