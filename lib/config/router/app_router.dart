@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:go_router/go_router.dart';
 import 'package:widgets_app/presentation/screens/screens.dart';
 
@@ -12,19 +13,31 @@ final appRouter = GoRouter(
     GoRoute(
       path: '/',
       name: HomeScreen.name,   //TODO navegar entre pantallas con go_router 6.2: Para poder utilizarlas en nuestro
-      builder: (context, state) => const HomeScreen(),
+      pageBuilder: (context, state) => const CupertinoPage(child: HomeScreen()),
     ),
 
     GoRoute(
       path: '/buttons',
       name: ButtonsScreen.name,
-      builder: (context, state) => const ButtonsScreen(),
+      pageBuilder: (context, state) => const CupertinoPage(child: ButtonsScreen()),
     ),
 
     GoRoute(
       path: '/cards',
       name: CardsScreen.name,
-      builder: (context, state) => const CardsScreen(),
+      pageBuilder: (context, state) => const CupertinoPage(child: CardsScreen()),
+    ),
+
+    GoRoute(
+      path: '/progress',
+      name: ProgressScreen.name,
+      pageBuilder: (context, state) => const CupertinoPage(child: ProgressScreen()),
+    ),
+
+    GoRoute(
+      path: '/snackbars',
+      name: SnackBarScreen.name,
+      pageBuilder: (context, state) => const CupertinoPage(child: SnackBarScreen()),
     ),
 
   ],

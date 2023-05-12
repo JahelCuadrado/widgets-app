@@ -58,9 +58,10 @@ class _CustomListTile extends StatelessWidget {
       trailing: Icon(Icons.arrow_forward_ios_rounded, color: colors.primary,),
       onTap: () {
 
-      //   Navigator.of(context).push( //con push ponemos esta nueva pantalla encima, con replace la replazariamos
+         //con push ponemos esta nueva pantalla encima, con replace la replazariamos
+      //   Navigator.of(context).push(
       //     CupertinoPageRoute(
-      //       builder: (context) => const ButtonsScreen(),
+      //       builder: (context) =>  menuItem.pantalla ,
       //   ),
       //  );
 
