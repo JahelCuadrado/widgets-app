@@ -24,12 +24,24 @@ class SnackBarScreen extends StatelessWidget {
 
 
   void openDialog(BuildContext context){
+
     showDialog(
+      //necesita el context
       context: context, 
+
+      //con esto indicamos que el dialogo no se cierre al pinchar fuera
       barrierDismissible: false,
+
+      //En el builder creamos el Alert dialog
       builder: (context) => AlertDialog(
+
+        //Creamos un titulo
         title: const Text('¿Estas seguro?'),
+
+        //Creamos un cuerpo con texto
         content: const Text('Aliqua est duis deserunt nulla fugiat esse do dolor ad incididunt voluptate qui esse. Ipsum ipsum mollit eiusmod reprehenderit cupidatat. Elit dolor dolor aute elit dolor officia est deserunt quis est consectetur Lorem consectetur.'),
+
+        //Al dialog le añadimos dos botones, los dos cierran el dialogo con la funcion pop
         actions: [
 
           TextButton(onPressed: () {
