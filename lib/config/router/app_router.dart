@@ -40,6 +40,24 @@ final appRouter = GoRouter(
       pageBuilder: (context, state) => const CupertinoPage(child: SnackBarScreen()),
     ),
 
+    GoRoute(
+      path: '/animated',
+      name: AnimatedScreen.name,
+      pageBuilder: (context, state) => const CupertinoPage(child: AnimatedScreen()),
+    ),
+
+    GoRoute(
+      path: '/ui-controls',
+      name: UiControlsScreen.name,
+      pageBuilder: (context, state) => const CupertinoPage(child: UiControlsScreen()),
+    ),
+
+    GoRoute(
+      path: '/tutorial',
+      name: AppTutorialScreen.name,
+      pageBuilder: (context, state) => const CupertinoPage(child: AppTutorialScreen()),
+    ),
+
   ],
 
 
