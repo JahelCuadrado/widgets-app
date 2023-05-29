@@ -79,11 +79,6 @@ final appRouter = GoRouter(
       pageBuilder: (context, state) => const CupertinoPage(child: InfiniteScrollScreen()),
     ),
 
-    GoRoute(
-      path: '/counter',
-      name: CounterScreen.name,
-      pageBuilder: (context, state) => const CupertinoPage(child: CounterScreen()),
-    ),
 
   ],
 

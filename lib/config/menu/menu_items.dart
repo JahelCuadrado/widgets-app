@@ -55,6 +55,34 @@ const List<MenuItem> appMenuItems = [
       icon: Icons.info_outline,
       ),
 
+        MenuItem(
+      title: 'Animated Container', 
+      subTitle: 'Stateful widget animado', 
+      link: '/animated', 
+      icon: Icons.check_box_outline_blank_rounded,
+      ),
+
+    MenuItem(
+      title: 'UI Controls + Tiles', 
+      subTitle: 'Una serie de controles en Flutter', 
+      link: '/ui-controls', 
+      icon: Icons.car_rental_outlined,
+      ),
+
+    MenuItem(
+      title: 'Introducción a la aplicación', 
+      subTitle: 'Pequeño tutorial de la aplicación.', 
+      link: '/tutorial', 
+      icon: Icons.accessible_rounded,
+      ),
+
+    MenuItem(
+      title: 'InfiniteScroll and Pull', 
+      subTitle: 'Listas infinitas y pull to refresh', 
+      link: '/infinite', 
+      icon: Icons.list_alt_rounded,
+      ),
+
     MenuItem(
       title: 'Theme Changer', 
       subTitle: 'Cambiar tema de la app con riverpod', 
