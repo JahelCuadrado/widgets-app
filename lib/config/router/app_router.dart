@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:go_router/go_router.dart';
+import 'package:widgets_app/presentation/screens/counter/counter_screen.dart';
 import 'package:widgets_app/presentation/screens/screens.dart';
 
 
@@ -62,6 +63,12 @@ final appRouter = GoRouter(
       path: '/infinite',
       name: InfiniteScrollScreen.name,
       pageBuilder: (context, state) => const CupertinoPage(child: InfiniteScrollScreen()),
+    ),
+
+    GoRoute(
+      path: '/counter',
+      name: CounterScreen.name,
+      pageBuilder: (context, state) => const CupertinoPage(child: CounterScreen()),
     ),
 
   ],
