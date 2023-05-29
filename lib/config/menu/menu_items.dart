@@ -61,5 +61,4 @@ const List<MenuItem> appMenuItems = [
       link: '/theme_changer_screen', 
       icon: Icons.three_mp_rounded,
       ),
-
 ];
