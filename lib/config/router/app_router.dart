@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:go_router/go_router.dart';
+import 'package:widgets_app/presentation/screens/counter/counter_screen.dart';
 import 'package:widgets_app/presentation/screens/screens.dart';
+import 'package:widgets_app/presentation/screens/theme_changer/theme_changer_screen.dart';
 
 
 
@@ -38,6 +40,18 @@ final appRouter = GoRouter(
       path: '/snackbars',
       name: SnackBarScreen.name,
       pageBuilder: (context, state) => const CupertinoPage(child: SnackBarScreen()),
+    ),
+
+    GoRoute(
+      path: '/counter_screen',
+      name: CounterScreen.name,
+      pageBuilder: (context, state) => const CupertinoPage(child: CounterScreen()),
+    ),
+
+    GoRoute(
+      path: '/theme_changer_screen',
+      name: ThemeChangerScreen.name,
+      pageBuilder: (context, state) => const CupertinoPage(child: ThemeChangerScreen()),
     ),
 
   ],
