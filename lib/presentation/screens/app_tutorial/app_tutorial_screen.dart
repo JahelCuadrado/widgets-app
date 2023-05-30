@@ -50,7 +50,7 @@ class _AppTutorialScreenState extends State<AppTutorialScreen> {
           endReach = true;
         });
       }
-      print('${ pageviewController.page }');
+      
     });
   }
 

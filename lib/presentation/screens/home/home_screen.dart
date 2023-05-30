@@ -1,15 +1,11 @@
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:widgets_app/config/menu/menu_items.dart';
-import 'package:widgets_app/presentation/screens/buttons/buttons_screen.dart';
-import 'package:widgets_app/presentation/screens/cards/cards_screed.dart';
 import 'package:widgets_app/presentation/screens/widgets/side_menu.dart';
 
 class HomeScreen extends StatelessWidget {
 
-  //TODO navegar entre pantallas con go_router 6.1: podemos ponerle una propiedad estatica a nuestras pantallas con un nombre
   static const String name = 'home'; 
 
   const HomeScreen({super.key});
@@ -76,11 +72,11 @@ class _CustomListTile extends StatelessWidget {
       //   menuItem.link
       //   ); 
 
-      //TODO navegar entre pantallas con go_router 5: Navegar a la pantalla
+    
       context.push(menuItem.link);
 
 
-     //TODO navegar entre pantallas con go_router 7: Navegamos utilizando los name
+     
       //context.pushNamed(CardsScreen.name);
 
        

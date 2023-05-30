@@ -30,7 +30,6 @@ class _UiControlsViewState extends State<_UiControlsView> {
   bool wantsBreakfast = false;
   bool wantsLunch = false;
   bool wantsDinner = false;
-  bool _isExpanded = false;
   Transportation selectedTransportation = Transportation.car;
 
   @override
@@ -67,7 +66,6 @@ class _UiControlsViewState extends State<_UiControlsView> {
                 groupValue: selectedTransportation,
                 onChanged: ((value) => setState(() {
                       selectedTransportation = Transportation.car;
-                      _isExpanded = false;
                     }))),
 
             RadioListTile(
@@ -77,7 +75,7 @@ class _UiControlsViewState extends State<_UiControlsView> {
                 groupValue: selectedTransportation,
                 onChanged: ((value) => setState(() {
                       selectedTransportation = Transportation.boat;
-                      _isExpanded = false;
+
                     }))),
 
             RadioListTile(
@@ -87,7 +85,6 @@ class _UiControlsViewState extends State<_UiControlsView> {
                 groupValue: selectedTransportation,
                 onChanged: ((value) => setState(() {
                       selectedTransportation = Transportation.plane;
-                      _isExpanded = false;
                     }))),
 
             RadioListTile(
@@ -97,7 +94,6 @@ class _UiControlsViewState extends State<_UiControlsView> {
                 groupValue: selectedTransportation,
                 onChanged: ((value) => setState(() {
                       selectedTransportation = Transportation.submarine;
-                      _isExpanded = false;
                     }))),
           ],
 

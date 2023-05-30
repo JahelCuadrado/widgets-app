@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:widgets_app/presentation/screens/screens.dart';
 
-
-//TODO menu 1
 
 class MenuItem{
   final String title;

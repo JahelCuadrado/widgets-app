@@ -16,7 +16,7 @@ class ButtonsScreen extends StatelessWidget {
       ),
       body: const _ButtonsView(),
       floatingActionButton: FloatingActionButton(child: const Icon(Icons.arrow_back_ios_new_rounded), onPressed: (){
-        context.pop(); //TODO navegar entre pantallas con go_router 8: eliminar pantalla para volver a la anterior
+        context.pop(); 
       }, 
       ),
     );

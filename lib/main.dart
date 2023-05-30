@@ -6,7 +6,7 @@ import 'package:widgets_app/presentation/providers/theme_provider.dart';
 
 void main() {
   runApp(
-    const ProviderScope(child: MainApp(),)  //TODO 1: riverpod
+    const ProviderScope(child: MainApp(),)  
   );
 
 }

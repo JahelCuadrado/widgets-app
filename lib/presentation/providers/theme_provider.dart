@@ -13,7 +13,6 @@ final colorListProvider = StateProvider((ref) => colors);
 final selectedColorProvider = StateProvider((ref) => 0);
 
 
-//TODO 8: riverpod
 
 final themeNotifierProvider = StateNotifierProvider<ThemeNotifier, AppTheme>((ref) => 
 ThemeNotifier()

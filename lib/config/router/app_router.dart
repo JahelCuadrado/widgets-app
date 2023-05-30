@@ -1,21 +1,19 @@
 import 'package:flutter/cupertino.dart';
 import 'package:go_router/go_router.dart';
 import 'package:widgets_app/presentation/screens/counter/counter_screen.dart';
-import 'package:widgets_app/presentation/screens/counter/counter_screen.dart';
 import 'package:widgets_app/presentation/screens/screens.dart';
 import 'package:widgets_app/presentation/screens/theme_changer/theme_changer_screen.dart';
 
 
 
 // GoRouter configuration
-//TODO navegar entre pantallas con go_router 2: creamos este archivo de rutas con las rutas
 final appRouter = GoRouter(
   initialLocation: '/',  //Ruta por defecto que se muestra
   routes: [
 
     GoRoute(
       path: '/',
-      name: HomeScreen.name,   //TODO navegar entre pantallas con go_router 6.2: Para poder utilizarlas en nuestro
+      name: HomeScreen.name,   
       pageBuilder: (context, state) => const CupertinoPage(child: HomeScreen()),
     ),
 
