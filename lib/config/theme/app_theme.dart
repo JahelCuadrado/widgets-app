@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 //Variables
-const Color customColor = Color.fromARGB(255, 51, 255, 0);
+const Color customColor = Color.fromARGB(255, 255, 168, 68);
 
 const List<Color> colors = [
   customColor,
